@@ -10,7 +10,7 @@ server {
 
     # When not specifying log details, the default setting for nginx is to log as the "combined"-log-format. 
     # This is a hardcoded format. Better is to specify "audit", "pseudo" or "main" which you define in the
-    # http-context block.
+    # http-context block. Documentation: https://docs.nginx.com/nginx/admin-guide/monitoring/logging/
     access_log                  /var/log/nginx/dawnbringer.access.log;
     error_log                   /var/log/nginx/dawnbringer.error.log;
 
