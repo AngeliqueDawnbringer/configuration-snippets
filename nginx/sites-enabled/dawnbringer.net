@@ -16,6 +16,8 @@ server {
 
     ssl_certificate             /etc/letsencrypt/live/dawnbringer.net/fullchain.pem;
     ssl_certificate_key         /etc/letsencrypt/live/dawnbringer.net/privkey.pem;
+    # enable OCSP stapling (it requires the chain)
+    ssl_trusted_certificate     /etc/letsencrypt/live/dawnbringer.net/chain.pem;
 
     include /etc/nginx/conf.d/letsencrypt.conf;
     include /etc/nginx/conf.d/default_site.conf;
