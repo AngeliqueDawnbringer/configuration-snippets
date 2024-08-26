@@ -16,7 +16,7 @@ Get-Label
 # Show the Label-Settings Only
 (Get-Label -Identity "Custom").Settings
 
-# Prevent Content Analysis online from Connected Experiences and Microsoft 364 CoPilot
+# Prevent Content Analysis online from Connected Experiences and Microsoft 365 CoPilot
 Set-Label -Identity "Custom" -AdvancedSettings @{BlockContentAnalysisServices="True"}
 
 (Get-Label -Identity "Custom").Settings
